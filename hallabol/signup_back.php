@@ -57,7 +57,7 @@ if(!$result){
 
 session_unset($_SESSION['signup_error']);
 
-$xml = file_get_contents('http://dice.net23.net/mail_confirmation.php?email='.$email);
+$xml = file_get_contents('http://students.iitgn.ac.in/hallabol/mail_confirmation.php?email='.$email);
 header('Location: ./confirm.php');
 
 function fix_string($string){
